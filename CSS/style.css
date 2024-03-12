@@ -1,0 +1,389 @@
+/*=======================GLOBAL=====================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --Bright_Red: hsl(12, 88%, 59%);
+  --Dark_Blue: hsl(228, 39%, 23%);
+  --Dark_Grayish_Blue: hsl(227, 12%, 61%);
+  --Very_Dark_Blue: hsl(233, 12%, 13%);
+  --Very_Pale_Red: hsl(13, 100%, 96%);
+  --Vary_Light_Gray: hsl(0, 0%, 98%);
+
+  /*
+  FONTS
+  .be-vietnam pro-regular {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  .be-vietnam pro-medium {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+  .be-vietnam pro-bold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+*/
+}
+
+/*=======================BODY=====================*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg-simplify-section-mobile.svg");
+}
+
+/*=======================WRAPPER=====================*/
+.wrapper {
+  width: min(37.5rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+/*=======================HEADER=====================*/
+header {
+  padding-block: 2rem;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper div img {
+  width: 12rem;
+}
+
+/*Colocar essa menu pronto no tamanho de Notbook / MacBook*/
+header .wrapper ol {
+  display: none;
+}
+
+.wrapper ol li {
+  list-style: none;
+}
+
+ol li a {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--Dark_Blue);
+}
+
+/*Colocar esse botão pronto no tamanho de Notbook / MacBook*/
+
+header .wrapper button {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: var(--Vary_Light_Gray);
+  width: 10rem;
+  height: 3rem;
+  background-color: var(--Bright_Red);
+  border: none;
+  border-radius: 20rem;
+  display: none;
+}
+
+/*=======================INTRODUCTION=====================*/
+
+.introduction .wrapper {
+  display: grid;
+  grid-template-areas:
+    "B"
+    "A";
+  margin-bottom: 10rem;
+}
+
+.wrapper div {
+  margin: auto;
+  width: 100%;
+}
+
+.introduction .wrapper .introduction-content {
+  grid-area: A;
+}
+
+.wrapper .introduction-content h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--Dark_Blue);
+  margin-bottom: 1rem;
+}
+
+.wrapper .introduction-content p {
+  font-size: 1.6rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Dark_Grayish_Blue);
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.wrapper .introduction-content button {
+  display: block;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: var(--Vary_Light_Gray);
+  width: 13rem;
+  height: 4rem;
+  background-color: var(--Bright_Red);
+  border: none;
+  border-radius: 20rem;
+  margin: auto;
+}
+
+.introduction .wrapper .introduction-img {
+  grid-area: B;
+  height: 30rem;
+  background-image: url("/images/illustration-intro.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*=======================ASIDE=====================*/
+
+.introduction .wrapper .aside-content {
+  grid-area: A;
+}
+
+.wrapper .aside-content h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--Dark_Blue);
+  margin-bottom: 1rem;
+}
+
+.wrapper .aside-content p {
+  font-size: 1.4rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Dark_Grayish_Blue);
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-inline: 1rem;
+}
+
+/*=======================MAIN=====================*/
+
+.wrapper div span {
+  display: flex;
+  width: 105%;
+}
+
+.wrapper span {
+  background-color: var(--Very_Pale_Red);
+  margin-bottom: 1rem;
+}
+
+div span h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: var(--Bright_Red);
+  border-radius: 20rem;
+ 
+}
+
+div span p {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.35rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--Dark_Blue);
+}
+
+.wrapper div .main-content {
+  font-size: 1.35rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Dark_Grayish_Blue);
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/*=======================SECTION=====================*/
+
+section .wrapper h1{
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--Dark_Blue);
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.wrapper .carrousel-contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper .carrousel-contents img{
+  width: 7rem;
+  margin-bottom: 2rem;
+}
+
+.wrapper .carrousel-contents h3{
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.35rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--Dark_Blue);
+}
+
+.wrapper .carrousel-contents p {
+  width: 29rem;
+  font-size: 1.35rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Dark_Grayish_Blue);
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+section .wrapper button{
+  display: block;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: var(--Vary_Light_Gray);
+  width: 13rem;
+  height: 4rem;
+  background-color: var(--Bright_Red);
+  border: none;
+  border-radius: 20rem;
+  margin: auto;
+} 
+
+
+/*=======================ARTICLE=====================*/
+
+article .wrapper{
+  margin-top: 3rem;
+  background-color: var(--Bright_Red);
+  padding-block: 12rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+article .wrapper h1{
+  width: 30rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-style: normal;
+  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+ 
+}
+
+article .wrapper button{
+  display: block;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--Bright_Red);
+  width: 13rem;
+  height: 4rem;
+  background-color: white;
+  border: none;
+  border-radius: 20rem;
+
+}
+
+/*=======================FOOTER=====================*/
+footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very_Dark_Blue);
+}
+
+footer .wrapper div{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+
+footer .wrapper input{
+ 
+  width: 20rem;
+  border-radius: 20rem;
+  border: none;
+  font-size: 1.1rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Dark_Grayish_Blue);
+  padding-left: 2rem;
+  
+
+
+
+}
+
+footer .wrapper button{
+  display: block;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #FFFFFF;
+  width: 7rem;
+  height: 4rem;
+  background-color: var(--Bright_Red);
+  border: none;
+  border-radius: 20rem;
+
+}

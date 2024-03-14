@@ -196,7 +196,7 @@ header .wrapper button {
 
 .wrapper div span {
   display: flex;
-  width: 105%;
+  width: min(35.1rem, 110%);
 }
 
 .wrapper span {
@@ -386,4 +386,39 @@ footer .wrapper button{
   border: none;
   border-radius: 20rem;
 
+}
+
+footer .wrapper .footer-links{
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+ 
+}
+
+.footer-links ol li{
+  font-size: 1.6rem;
+  color: var(--Vary_Light_Gray);
+  margin-top: 1.5rem;
+
+}
+
+footer .wrapper .social-links{
+display: flex;
+gap:2.5rem;
+margin-block: 5rem;
+}
+
+.social-links a img{
+  width: 3.5rem;
+}
+
+footer .wrapper .footer-logo{
+  width: 15rem;
+  margin-bottom: 5rem;
+}
+
+footer .wrapper p {
+  font-size: 1.3rem;
+  color: var(--Dark_Grayish_Blue);
+  margin-bottom: 2rem;
 }
